@@ -1,0 +1,89 @@
+<section class="relative py-8 bg-body w-full mx-auto overflow-hidden">
+    <div class="px-11 pt-8 pb-12 bg-body bg-opacity-90 md:max-w-xl mx-auto border  overflow-hidden w-full">
+        <form id="contact__form" class="bg-gradient-radial to-transparent bg-blend-lighten p-2 group">
+            <div class="relative z-0 w-full mb-5 group">
+                <div class="relative z-0 w-full mb-5 group ">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h11.613a2 2 0 0 0 1.346-.52l4.4-4a2 2 0 0 0 0-2.96l-4.4-4A2 2 0 0 0 15.613 6H4Z"/>
+                        </svg>
+                    </div>
+
+                    <input type="text" required name="from_name" id="from_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer ps-10" placeholder=" "/>
+                    <label for="from_name" class="ps-10 peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">First & Last Name</label>
+                    <label for="from_name" class="hidden ps-10 peer-focus:font-medium text-sm duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 peer-focus:translate-x-2 peer-focus:left-auto  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-placeholder-shown[:not(:focus):invalid]:block">Name field is empty</label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group ">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                            <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                            <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                        </svg>
+                    </div>
+                    <input type="email" name="reply_to" id="reply_to" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0  peer ps-10 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500"
+                                                                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                                                      placeholder=" " 
+                                                                      required />
+                    <label for="reply_to" class="ps-10 peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Email address</label>
+                    <label for="reply_to" class="hidden ps-10 peer-focus:font-medium absolute text-sm text-red duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-red peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">Email address is invalid</label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group bg-ar-gray">
+                    <textarea name="message" id="message" rows="10" class="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-ar-gold focus:border-t-transparent focus:border-x-transparent focus:border-b-ar-gold focus:ring-0 disabled:opacity-50 disabled:pointer-events-none text-ar-gold
+                                    focus:px-9
+                                    focus:pt-6
+                                    focus:pb-2
+                                    [&:not(:placeholder-shown)]:pt-6
+                                    [&:not(:placeholder-shown)]:pb-2
+                                    autofill:pt-6
+                                    autofill:pb-2" placeholder=" " required ></textarea>
+                    <label for="message" class="ps-5 absolute top-0 start-0 py-4 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  peer-disabled:opacity-50 peer-disabled:pointer-events-none text-ar-gold
+                                peer-focus:text-xs
+                                peer-focus:-translate-y-1.5
+                                peer-focus:text-ar-gold
+                                peer-[:not(:placeholder-shown)]:text-xs
+                                peer-[:not(:placeholder-shown)]:-translate-y-1.5
+                                peer-[:not(:placeholder-shown)]:text-ar-gold">Your Message</label>
+                    <label for="message" class="hidden ps-5 absolute top-0 start-0 py-4 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  peer-disabled:opacity-50 peer-disabled:pointer-events-none text-ar-gold
+                                peer-focus:text-xs
+                                peer-focus:-translate-y-1.5
+                                peer-focus:text-ar-gold
+                                peer-[:not(:placeholder-shown)]:text-xs
+                                peer-[:not(:placeholder-shown)]:-translate-y-1.5
+                                peer-[:not(:placeholder-shown)]:text-ar-gold peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">No message is entered</label>
+                </div>
+                <div class="md:inline-block">
+                    <button
+  type="submit"
+  class="
+    w-full py-4 px-9 rounded-xl font-semibold shadow-4xl transition-all duration-200
+
+    /* Base (valid, idle) */
+    bg-accent-secondary text-white border border-accent-secondary
+    cursor-pointer
+
+    /* Hover + focus (only when valid) */
+    hover:bg-accent-secondary/90
+    focus:outline-none
+    focus:ring-2
+    focus:ring-accent-secondary
+    focus:ring-offset-2
+
+    /* Invalid / disabled (via form group) */
+    group-invalid:bg-slate-400
+    group-invalid:border-slate-400
+    group-invalid:text-slate-700
+    group-invalid:cursor-not-allowed
+    group-invalid:pointer-events-none
+    group-invalid:shadow-none
+
+    /* Prevent hover styles when invalid */
+    group-invalid:hover:bg-slate-400
+  "
+>
+  Send Message
+</button>
+                </div>
+        </form>
+            </div>
+</section>
+

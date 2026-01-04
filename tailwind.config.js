@@ -2,7 +2,9 @@
 module.exports = {
     content: [
         "src/**/*.html",
-        "./node_modules/flowbite/**/*.js"
+        './src/assets/css/**/*.{css,scss}',
+        "./node_modules/flowbite/**/*.js",
+        "./node_modules/flowbite-datepicker/**/*.js"
     ],
     theme: {
         extend: {
@@ -11,9 +13,8 @@ module.exports = {
                 limelight: ["Limelight", "sans-serif"],
             },
             colors: {
-                'ar-gold': '#a2911d',
-                'ar-gray': '#292626',
-                'ar-white': '#f4f4f4',
+                'accent-pink': '#fbf7f7',
+                'accent-secondary': '#967e7e',
             },
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "emailer"
+version = "0.1.0"
+description = "Minimal FastAPI Lambda container"
+authors = ["You"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.13"
+fastapi = "^0.111.0"
+mangum = "^0.17.0"
+python-multipart = "^0.0.21"
+boto3 = "^1.42.21"
+httpx = "^0.28.1"
+botocore = {extras = ["crt"], version = "^1.42.28"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "uvicorn (>=0.40.0,<0.41.0)"
+]

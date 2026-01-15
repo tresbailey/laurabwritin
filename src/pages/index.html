@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJSXSB3CDB"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    .site-title { font-family: 'Merriweather', serif; }
-  </style>
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <title>Laura R Bailey — Living Life Filtered Through the Lens of Eternity</title>
-</head>
-<body class="bg-white text-gray-900">
+            gtag('config', 'G-CJSXSB3CDB');
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Laura R Bailey — Living Life Filtered Through the Lens of Eternity" />
+        <meta property="og:description" content="Laura R Bailey is a Bible teacher helping women experience the abundant life in Christ" />
+        <meta property="og:image" content="https://www.laurarbailey.com/img/logos/main-logo.png" />
+        <meta property="og:url" content="https://www.laurarbailey.com/" />
+        <meta property="og:type" content="website" />
+        <script src="https://cdn.tailwindcss.com"></script>
 
-    @@include('header.html')
-<!-- Hero Section -->
-<main class="text-gray-900 font-serif">
-    @@include('hero-content.html')
-  <!-- Featured Image Section -->
-  <section class="w-full bg-accent-pink py-16">
-    <div class="max-w-5xl mx-auto px-4">
-      <div class="relative w-full overflow-hidden rounded-xl" style="padding-top: 56.25%;">
-        <iframe
-    class="absolute top-0 left-0 w-full h-full"
-    src="https://www.youtube.com/embed/8PX1euJ9Qqs"
-    title="YouTube video"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-        <img src="/images/placeholder-feature.jpg" alt="Featured" class="w-full h-auto" />
-      </div>
-    </div>
-  </section>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+        <style>
+body { font-family: 'Inter', sans-serif; }
+.site-title { font-family: 'Merriweather', serif; }
+        </style>
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <title>Laura R Bailey — Living Life Filtered Through the Lens of Eternity</title>
+    </head>
+    <body class="bg-white text-gray-900">
+
+        @@include('header.html')
+        <!-- Hero Section -->
+        <main class="text-gray-900 font-serif">
+            @@include('hero-content.html')
+            <!-- Featured Image Section -->
+            <section class="w-full bg-accent-pink py-16">
+                <div class="max-w-5xl mx-auto px-4">
+                    <div class="relative w-full overflow-hidden rounded-xl" style="padding-top: 56.25%;">
+                        <iframe
+                                class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/8PX1euJ9Qqs"
+                                title="YouTube video"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                                ></iframe>
+                        <img src="/images/placeholder-feature.jpg" alt="Featured" class="w-full h-auto" />
+                    </div>
+                </div>
+            </section>
 
 
-  @@include('subscribe.html')
-  @@include('socials.html')
-</main>
+            @@include('subscribe.html')
+            @@include('socials.html')
+        </main>
 
-@@include('footer.html')
-
-</body>
+        @@include('footer.html')
+        <script src="/js/subscribe.js"></script>
+        <!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '784625');
+</script>
+<!-- End MailerLite Universal -->
+    </body>
 </html>
 

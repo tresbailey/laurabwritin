@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJSXSB3CDB"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-CJSXSB3CDB');
+        </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdn.tailwindcss.com"></script>
@@ -13,37 +21,69 @@ body { font-family: 'Inter', sans-serif; }
         <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
 
         <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-        <title>Laura R Bailey — Living Life Filtered Through the Lens of Eternity</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <title>Laura R Bailey — Speaking Engagement Form</title>
     </head>
     <body class="bg-white text-gray-900">
 
         @@include('header.html')
         <main class="text-gray-900 font-serif">
             <section class="relative py-8 bg-body overflow-hidden">
-                <!--<img class="absolute bottom-0 right-0" src="https://shuffle.dev/flaro-assets/images/contact/gradient2.svg" alt=""> -->
+                <div class="mb-6 block text-center">
+                    <h2 class="text-3xl md:text-4xl xl:text-3xl font-bold font-heading tracking-wider leading-none">
+                        Request a Speaking Engagement
+                    </h2>
+                </div>
                 <div class="relative container px-4 mx-auto">
                     <div class="flex flex-wrap m-8">
                         <div class="w-full md:w-full p-8">
                             <div class="px-11 pt-8 pb-12 bg-body bg-opacity-90 ml-auto border border-ar-gold rounded-4xl shadow-12xl overflow-hidden w-full bg-repeat" style="background-image: url('img/logos/aremington-background.png')">
+            <div id="engagement-success" class="hidden flex items-center w-full mx-auto p-4 text-body bg-green-200 border border-green-600" role="alert">
+                <div class="inline-flex items-center justify-center shrink-0 w-7 h-7 text-fg-success bg-success-soft rounded">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5"/></svg>
+                    <span class="sr-only">Check icon</span>
+                </div>
+                <div class="ms-3 text-sm font-normal">Engagement form successfully sent. Thank you.</div>
+                <button type="button" class="ms-auto flex items-center justify-center text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded text-sm h-8 w-8 focus:outline-none" data-dismiss-target="#toast-success" aria-label="Close">
+                    <span class="sr-only">Close</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+                </button>
+            </div>
+            <div id="engagement-error" class="hidden mx-auto flex items-center w-full p-4 text-red-800 bg-red-200 border border-red-800" role="alert">
+                <div class="inline-flex items-center justify-center shrink-0 w-7 h-7 text-fg-danger bg-danger-soft rounded">
+                   <svg class="w-6 h-6 text-red-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4a1 1 0 1 0-2 0v5a1 1 0 1 0 2 0V8Zm-1 7a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H12Z" clip-rule="evenodd"/>
+</svg>
+ 
+                    <span class="sr-only">Error icon</span>
+                </div>
+                <div class="ms-3 text-sm font-normal">Engagement form submission failed.</div>
+                <button type="button" class="ms-auto flex items-center justify-center text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded text-sm h-8 w-8 focus:outline-none" data-dismiss-target="#toast-danger" aria-label="Close">
+                    <span class="sr-only">Close</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+                </button>
+            </div>
                                 <form id="engagement__form" class="bg-gradient-radial to-transparent from-ar-gray bg-blend-lighten p-2 group">
                                     <div class="relative z-0 w-full mb-5 group">
-                                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-
-                                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                                <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm9.408-5.5a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2h-.01ZM10 10a1 1 0 1 0 0 2h1v3h-1a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-1v-4a1 1 0 0 0-1-1h-2Z" clip-rule="evenodd"/>
-                                            </svg>
-                                        </div>
-
                                         <div class="relative z-0 w-full mb-5 group bg-ar-gray">
                                             <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
                                                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                                     <path d="M4 6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h11.613a2 2 0 0 0 1.346-.52l4.4-4a2 2 0 0 0 0-2.96l-4.4-4A2 2 0 0 0 15.613 6H4Z"/>
                                                 </svg>
                                             </div>
-                                            <input type="text" name="from_name" id="from_name" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10" placeholder=" " required />
+                                            <input type="text" name="from_name" id="from_name" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-white border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10" placeholder=" " required />
                                             <label for="from_name" class="ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">First & Last Name</label>
                                             <label for="from_name" class="hidden ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">Name field is empty</label>
+                                        </div>
+                                        <div class="relative z-0 w-full mb-5 group definitely-show-this-element">
+                                            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path d="M4 6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h11.613a2 2 0 0 0 1.346-.52l4.4-4a2 2 0 0 0 0-2.96l-4.4-4A2 2 0 0 0 15.613 6H4Z"/>
+                                                </svg>
+                                            </div>
+                                            <input type="text" name="from_name_secret" id="from_name_secret" class="block py-2.5 px-0 w-full text-sm bg-white border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer ps-10" value="default" placeholder="default"/>
+                                            <label for="from_name_secret" class="ps-10 peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">From Secret Name</label>
+                                            <label for="from_name_secret" class="hidden ps-10 peer-focus:font-medium text-sm duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 peer-focus:translate-x-2 peer-focus:left-auto  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-placeholder-shown[:not(:focus):invalid]:block">From Secret Name field is empty</label>
                                         </div>
                                         <div class="relative z-0 w-full mb-5 group bg-ar-gray">
                                             <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -52,7 +92,7 @@ body { font-family: 'Inter', sans-serif; }
                                                     <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
                                                 </svg>
                                             </div>
-                                            <input type="email" name="reply_to" id="reply_to" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500"
+                                            <input type="email" name="reply_to" id="reply_to" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-white border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500"
                                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                                                    placeholder=" " 
                                                    required />
@@ -65,7 +105,7 @@ body { font-family: 'Inter', sans-serif; }
                                                     <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/>
                                                 </svg>
                                             </div>
-                                            <input type="text" name="location" id="location" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10" placeholder=" " required />
+                                            <input type="text" name="location" id="location" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-white border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10" placeholder=" " required />
                                             <label for="location" class="ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Location of Event - City and State</label>
                                             <label for="location" class="hidden ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">Location field is empty</label>
                                         </div>
@@ -79,7 +119,7 @@ body { font-family: 'Inter', sans-serif; }
 
 
                                             </div>
-                                            <input type="number" name="attendance" id="attendance" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10" placeholder=" " required />
+                                            <input type="number" name="attendance" id="attendance" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-white border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10" placeholder=" " required />
                                             <label for="attendance" class="ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Expected Attendance</label>
                                             <label for="attendance" class="hidden ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">Expected Attendance field is empty</label>
                                         </div>
@@ -90,7 +130,7 @@ body { font-family: 'Inter', sans-serif; }
                                                 </svg>
 
                                             </div>
-                                            <input type="number" name="budget" id="budget" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10" placeholder=" " required />
+                                            <input type="number" name="budget" id="budget" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-white border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10" placeholder=" " required />
                                             <label for="budget" class="ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Budget</label>
                                             <label for="budget" class="hidden ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">Budget field is empty</label>
                                         </div>
@@ -102,51 +142,36 @@ body { font-family: 'Inter', sans-serif; }
                                                 </svg>
                                             </div>
 
-                                            <input type="text" name="church_name" id="from_name" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10" placeholder=" " required />
+                                            <input type="text" name="church_name" id="from_name" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-white border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10" placeholder=" " required />
                                             <label for="church_name" class="ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Church Name and Website</label>
                                             <label for="church_name" class="hidden ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">Church Name field is empty</label>
                                         </div>
-                                        <div class="relative z-0 w-full mb-5 group bg-ar-gray">
+                                        <div class="relative w-full mb-5 group bg-ar-gray">
 
 
-                                            <div class="relative max-w-sm">
-                                                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                                                    <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"/></svg>
-                                                </div>
-                                                <input datepicker name="session_count" id="default-datepicker" type="text" class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="Select date">
+                                            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                                <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"/></svg>
                                             </div>
+                                            <input type="text" name="engagement_date" id="engagement_date" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-white border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10" placeholder=" " required />
+                                            <label for="engagement_date" class="ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Date of Engagement</label>
+                                            <label for="engagement_date" class="hidden ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">Date of Engagement field is empty</label>
+                                        </div>
 
+                                        <div class="relative z-0 w-full mb-5 group bg-ar-gray">
+                                            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path fill-rule="evenodd" d="M18 5.05h1a2 2 0 0 1 2 2v2H3v-2a2 2 0 0 1 2-2h1v-1a1 1 0 1 1 2 0v1h3v-1a1 1 0 1 1 2 0v1h3v-1a1 1 0 1 1 2 0v1Zm-15 6v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-8H3ZM11 18a1 1 0 1 0 2 0v-1h1a1 1 0 1 0 0-2h-1v-1a1 1 0 1 0-2 0v1h-1a1 1 0 1 0 0 2h1v1Z" clip-rule="evenodd"/>
+                                                </svg>
 
-
+                                            </div>
+                                            <input type="number" name="session_count" id="session_count" class="block py-2.5 px-0 w-full text-sm text-ar-gold bg-white border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-ar-gold focus:outline-none focus:ring-0 focus:border-ar-gold peer ps-10" placeholder=" " required />
+                                            <label for="session_count" class="ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Session Count</label>
+                                            <label for="session_count" class="hidden ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">Session Count field is invalid</label>
                                         </div>
 
 
                                         <div class="relative z-0 w-full mb-5 group bg-ar-gray">
-                                            <label for="session_count" class="ps-10 peer-focus:font-medium absolute text-sm text-ar-gold duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-ar-gold peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Number of Sessions that Laura will Speak</label>
-                                            <button id="dropdownDefaultButton" data-dropdown-toggle="session_count" class="inline-flex items-center justify-center bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none" type="button">
-                                                Sessions
-                                                <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
-                                            </button>
-
-                                            <!-- Dropdown menu -->
-                                            <div id="session_count" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
-                                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDefaultButton">
-                                                    <li>
-                                                        <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">1</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">2</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">3</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="relative z-0 w-full mb-5 group bg-ar-gray">
-                                            <textarea name="description" id="description" rows="10" class="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-ar-gold focus:border-t-transparent focus:border-x-transparent focus:border-b-ar-gold focus:ring-0 disabled:opacity-50 disabled:pointer-events-none text-ar-gold
+                                            <textarea name="description" id="description" rows="10" class="peer py-4 px-0 block w-full bg-white border-2 border-gray-200 text-sm placeholder:text-transparent focus:border-ar-gold focus:border-t-transparent focus:border-x-transparent focus:border-b-ar-gold focus:ring-0 disabled:opacity-50 disabled:pointer-events-none text-ar-gold
                                                             focus:px-9
                                                             focus:pt-6
                                                             focus:pb-2
@@ -171,35 +196,35 @@ body { font-family: 'Inter', sans-serif; }
                                         </div>
                                         <div class="md:inline-block">
                                             <button
-  type="submit"
-  class="
-    w-full py-4 px-9 rounded-xl font-semibold shadow-4xl transition-all duration-200
+                                                    type="submit"
+                                                    class="
+                                                           w-full py-4 px-9 rounded-xl font-semibold shadow-4xl transition-all duration-200
 
-    /* Base (valid, idle) */
-    bg-accent-secondary text-white border border-accent-secondary
-    cursor-pointer
+/* Base (valid, idle) */
+bg-accent-secondary text-white border border-accent-secondary
+cursor-pointer
 
-    /* Hover + focus (only when valid) */
-    hover:bg-accent-secondary/90
-    focus:outline-none
-    focus:ring-2
-    focus:ring-accent-secondary
-    focus:ring-offset-2
+/* Hover + focus (only when valid) */
+hover:bg-accent-secondary/90
+focus:outline-none
+focus:ring-2
+focus:ring-accent-secondary
+focus:ring-offset-2
 
-    /* Invalid / disabled (via form group) */
-    group-invalid:bg-slate-400
-    group-invalid:border-slate-400
-    group-invalid:text-slate-700
-    group-invalid:cursor-not-allowed
-    group-invalid:pointer-events-none
-    group-invalid:shadow-none
+/* Invalid / disabled (via form group) */
+group-invalid:bg-slate-400
+group-invalid:border-slate-400
+group-invalid:text-slate-700
+group-invalid:cursor-not-allowed
+group-invalid:pointer-events-none
+group-invalid:shadow-none
 
-    /* Prevent hover styles when invalid */
-    group-invalid:hover:bg-slate-400
-  "
->
-  Send Message
-</button>
+/* Prevent hover styles when invalid */
+group-invalid:hover:bg-slate-400
+"
+                                                    >
+                                                    Send Message
+                                            </button>
                                         </div>
                                 </form>
                                     </div>
@@ -212,7 +237,7 @@ body { font-family: 'Inter', sans-serif; }
         @@include('footer.html')
         <script src="/assets/vendor/flowbite.min.js"></script>
         <script src="/assets/vendor/datepicker.min.js"></script>
-        <script src=/"js/engagement.js"></script>
+        <script src="/js/engagement.js"></script>
 
     </body>
 </html>

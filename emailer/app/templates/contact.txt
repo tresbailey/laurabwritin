@@ -1,0 +1,8 @@
+Hello Laura,
+You received a new message through your website's contact form.
+Message Submitter Name: {{reply_name}}
+Message Contents: {{message}}
+Message Sender's Email Address: {{reply_email}}
+
+Please remember, you will need to send an email directly to {{reply_email}} !
+

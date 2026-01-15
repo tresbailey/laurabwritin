@@ -1,0 +1,26 @@
+Resources:
+  ContactMessagesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: laurarbailey-engagement-emailer-audit
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: ses_message_id
+          AttributeType: S
+        - AttributeName: reply_email
+          AttributeType: S
+        - AttributeName: created_at
+          AttributeType: S
+      KeySchema:
+        - AttributeName: ses_message_id
+          KeyType: HASH
+      GlobalSecondaryIndexes:
+        - IndexName: reply_email-index
+          KeySchema:
+            - AttributeName: reply_email
+              KeyType: HASH
+            - AttributeName: created_at
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+

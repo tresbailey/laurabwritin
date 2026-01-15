@@ -1,0 +1,13 @@
+Hello Laura,
+You received a new speaking engagement request through your website.
+Message Submitter Name: {{reply_name}}
+Message Sender's Email Address: {{reply_email}}
+Event Location: {{location}}
+Expected Attendance: {{attendance}}
+Speaker Budget: {{budget}}
+Church Name: {{church_name}}
+Number of Sessions: {{session_count}}
+Event Description: {{description}}
+
+Please remember, you will need to send an email directly to {{reply_email}} !
+

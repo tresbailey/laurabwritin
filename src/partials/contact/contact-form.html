@@ -1,5 +1,27 @@
 <section class="relative py-8 bg-body w-full mx-auto overflow-hidden">
     <div class="px-11 pt-8 pb-12 bg-body bg-opacity-90 md:max-w-xl mx-auto border  overflow-hidden w-full">
+            <div id="contact-success" class="hidden flex items-center w-full mx-auto p-4 text-body bg-green-200 border border-green-600" role="alert">
+                <div class="inline-flex items-center justify-center shrink-0 w-7 h-7 text-fg-success bg-success-soft rounded">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5"/></svg>
+                    <span class="sr-only">Check icon</span>
+                </div>
+                <div class="ms-3 text-sm font-normal">Contact form successfully sent. Thank you.</div>
+                <button type="button" class="ms-auto flex items-center justify-center text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded text-sm h-8 w-8 focus:outline-none" data-dismiss-target="#toast-success" aria-label="Close">
+                    <span class="sr-only">Close</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+                </button>
+            </div>
+            <div id="contact-error" class="hidden mx-auto flex items-center w-full p-4 text-red-800 bg-red-200 border border-red-800" role="alert">
+                <div class="inline-flex items-center justify-center shrink-0 w-7 h-7 text-fg-danger bg-danger-soft rounded">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+                    <span class="sr-only">Error icon</span>
+                </div>
+                <div class="ms-3 text-sm font-normal">Contact form submission failed.</div>
+                <button type="button" class="ms-auto flex items-center justify-center text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded text-sm h-8 w-8 focus:outline-none" data-dismiss-target="#toast-danger" aria-label="Close">
+                    <span class="sr-only">Close</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+                </button>
+            </div>
         <form id="contact__form" class="bg-gradient-radial to-transparent bg-blend-lighten p-2 group">
             <div class="relative z-0 w-full mb-5 group">
                 <div class="relative z-0 w-full mb-5 group ">
@@ -9,10 +31,21 @@
                         </svg>
                     </div>
 
-                    <input type="text" required name="from_name" id="from_name" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer ps-10" placeholder=" "/>
+                    <input type="text" required name="from_name" id="from_name" class="block py-2.5 px-0 w-full text-sm bg-white border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer ps-10" placeholder=" "/>
                     <label for="from_name" class="ps-10 peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">First & Last Name</label>
                     <label for="from_name" class="hidden ps-10 peer-focus:font-medium text-sm duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 peer-focus:translate-x-2 peer-focus:left-auto  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-placeholder-shown[:not(:focus):invalid]:block">Name field is empty</label>
                 </div>
+                <div class="relative z-0 w-full mb-5 group definitely-show-this-element">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h11.613a2 2 0 0 0 1.346-.52l4.4-4a2 2 0 0 0 0-2.96l-4.4-4A2 2 0 0 0 15.613 6H4Z"/>
+                        </svg>
+                    </div>
+                    <input type="text" name="from_name_secret" id="from_name_secret" class="block py-2.5 px-0 w-full text-sm bg-white border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 peer ps-10" placeholder="default" value="default"/>
+                    <label for="from_name_secret" class="ps-10 peer-focus:font-medium absolute text-sm duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">From Secret Name</label>
+                    <label for="from_name_secret" class="hidden ps-10 peer-focus:font-medium text-sm duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 peer-focus:translate-x-2 peer-focus:left-auto  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-placeholder-shown[:not(:focus):invalid]:block">From Secret Name field is empty</label>
+                </div>
+
                 <div class="relative z-0 w-full mb-5 group ">
                     <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
@@ -20,7 +53,7 @@
                             <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
                         </svg>
                     </div>
-                    <input type="email" name="reply_to" id="reply_to" class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0  peer ps-10 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500"
+                    <input type="email" name="reply_to" id="reply_to" class="block py-2.5 px-0 w-full text-sm bg-white border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0  peer ps-10 invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500"
                                                                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                                                                       placeholder=" " 
                                                                       required />
@@ -28,7 +61,7 @@
                     <label for="reply_to" class="hidden ps-10 peer-focus:font-medium absolute text-sm text-red duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] peer-focus:start-3 rtl:peer-focus:translate-x-2 rtl:peer-focus:left-auto peer-focus:text-red peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">Email address is invalid</label>
                 </div>
                 <div class="relative z-0 w-full mb-5 group bg-ar-gray">
-                    <textarea name="message" id="message" rows="10" class="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-ar-gold focus:border-t-transparent focus:border-x-transparent focus:border-b-ar-gold focus:ring-0 disabled:opacity-50 disabled:pointer-events-none text-ar-gold
+                    <textarea name="message" id="message" rows="10" class="peer py-4 px-0 block w-full bg-white border-2 border-gray-300 text-sm placeholder:text-transparent focus:border-ar-gold focus:border-t-transparent focus:border-x-transparent focus:border-b-ar-gold focus:ring-0 disabled:opacity-50 disabled:pointer-events-none text-ar-gold
                                     focus:px-9
                                     focus:pt-6
                                     focus:pb-2
